@@ -1,0 +1,134 @@
+:root{
+    --tom-contraste:#A36731;
+}
+.card{
+    background-color:  #162029 !important;
+}
+.artigo-texto h1{
+    color: var(--tom-contraste);
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 50px;
+
+}
+
+.artigo-texto p{
+    color: #FFF;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo-principal img{
+/*    background-image: url(/site/img/saude.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;*/
+    max-height: 500px;
+    border-radius: 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-color:  var(--tom-contraste);
+}
+
+.footer-item-2 li a svg{
+    fill: var(--tom-contraste);
+}
+.footer-item-2 li a svg:hover{
+    fill: white;
+    transition: 300ms;
+}
+
+.footer-item span{
+    color:  var(--tom-contraste);
+}
+.texto-link{
+    color: #FFF;
+    font-size: larger;
+}
+
+.container-link-botao{
+    border-style: solid;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+
+.botao-cotacao{
+
+    background-color: var(--tom-contraste);
+    padding: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFF;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #FFF;
+    justify-content: center;
+    width: 100px;
+    white-space: nowrap;
+}
+
+.botao-cotacao:hover{
+
+    background-color: #ffffff;
+    padding: 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--tom-contraste);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--tom-contraste);
+    transition: 300ms;
+}
+@media (min-width:930px){
+    .footer-container{
+        height: 100px;
+    }
+
+    .nav-principal{
+        height: 80px;
+    }
+
+    .footer-item-2 li a svg{
+        max-height:80px !important;
+        max-width: 80px !important;
+    }
+
+    .footer-item span{
+        font-size: 20px;
+    }
+
+}
+
+
+@media (min-width:450px ) and (max-width:930px){
+    .footer-container{
+        height: 80px;
+    }
+    .footer-item-2 li a svg{
+        max-height:50px !important;
+        max-width: 50px !important;
+    }
+    .logo-principal{
+        display: none;
+    }
+}
+
+@media (max-width:450px){
+    .logo-principal {    
+        text-align: center;
+    }
+    .logo-principal img{    
+        max-width: 80vw;
+        margin-top: 5vh;
+    }
+}
+
